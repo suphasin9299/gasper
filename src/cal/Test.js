@@ -42,10 +42,10 @@
 
 // export default Test;
 
+
 import { useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { evaluate } from 'mathjs';
-import TableComponent from './TableComponent';  // นำเข้า TableComponent
 
 const Test = () => {
     const [x, setX] = useState('');
@@ -64,26 +64,6 @@ const Test = () => {
         const result = calSum(+x, +y);
         setSum(result);
     }
-
-    const TableComponent = ({ result }) => {
-        return (
-          <div>
-            <h2>ตารางผลลัพธ์</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>ผลลัพธ์</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{result}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        );
-      }
 
     function calSum(x, y) {
         return x + y;
@@ -121,14 +101,11 @@ const Test = () => {
                 <p><strong>x:</strong> {x}</p>
                 <p><strong>y:</strong> {y}</p>
             </div>
-
-            {/* เรียกใช้ TableComponent และส่ง prop ที่เป็นผลลัพธ์ที่ได้ */}
-            <ResultTableComponent  result={sum} />
         </Container>
     )
 }
 
-
 export default Test;
+
 
 
