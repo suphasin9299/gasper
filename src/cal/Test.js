@@ -41,11 +41,10 @@
 // }
 
 // export default Test;
-
 import { useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { evaluate } from 'mathjs';
-import TableComponent from './TableComponent';  // นำเข้า TableComponent
+// import TableComponent from './TableComponent';  // นำเข้า TableComponent
 
 const Test = () => {
     const [x, setX] = useState('');
@@ -123,7 +122,7 @@ const Test = () => {
             </div>
 
             {/* เรียกใช้ TableComponent และส่ง prop ที่เป็นผลลัพธ์ที่ได้ */}
-            <ResultTableComponent  result={sum} />
+            {/* <ResultTableComponent  result={sum} /> */}
         </Container>
     )
 }
