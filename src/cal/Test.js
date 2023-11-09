@@ -41,11 +41,18 @@
 // }
 
 // export default Test;
+<<<<<<< HEAD
 
 
 import { useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import { evaluate } from 'mathjs';
+=======
+import { useState } from 'react';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import { evaluate } from 'mathjs';
+// import TableComponent from './TableComponent';  // นำเข้า TableComponent
+>>>>>>> 9a7698a2d821949d5aa909921e91bfc56ee3d3a0
 
 const Test = () => {
     const [x, setX] = useState('');
@@ -101,6 +108,12 @@ const Test = () => {
                 <p><strong>x:</strong> {x}</p>
                 <p><strong>y:</strong> {y}</p>
             </div>
+<<<<<<< HEAD
+=======
+
+            {/* เรียกใช้ TableComponent และส่ง prop ที่เป็นผลลัพธ์ที่ได้ */}
+            {/* <ResultTableComponent  result={sum} /> */}
+>>>>>>> 9a7698a2d821949d5aa909921e91bfc56ee3d3a0
         </Container>
     )
 }
