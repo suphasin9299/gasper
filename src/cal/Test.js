@@ -101,7 +101,7 @@ const Test = () => {
                 <p><strong>x:</strong> {x}</p>
                 <p><strong>y:</strong> {y}</p>
             </div>
-            kuy
+            kuyกหฟกฟหกร่ฟรน่ยรน
         </Container>
         
     )
